@@ -1,0 +1,1 @@
+print("All glory to god Amen")
