@@ -16,15 +16,12 @@ if not S3_LIST_FILE.exists():
     print(f"Missing {S3_LIST_FILE}. Put one s3:// path per line.")
     sys.exit(1)
 
-# Authentication: either .netrc (recommended) OR environment variables EARTHDATA_USER/EARTHDATA_PASS
 USERNAME = os.environ.get("EARTHDATA_USER", "")
 PASSWORD = os.environ.get("EARTHDATA_PASS", "")
 
-# If both blank, requests will still use ~/.netrc when using requests.Session() w/ auth=None
 USE_AUTH = bool(USERNAME and PASSWORD)
 
-# Tuning
-MAX_WORKERS = 3       # adjust for parallel downloads 
+MAX_WORKERS = 3        
 RETRIES = 5
 CHUNK_SIZE = 1024 * 1024  # 1 MB
 INTER_FILE_DELAY = 3   # seconds between starting files 
