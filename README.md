@@ -5,4 +5,7 @@ Quick run down on how to build  the  db we have all  the data from the data set 
 
 From this website we  obtain the file  merra2_s3_paths.txt that has all the aws s3  buckets  with the data we want to  dowload (daily data).
 
-with the  file  download_merra2.py 
+with the  file  download_merra2.py we procceed to download  all the s3 buckets in the Folder  we want.
+
+Flask.py is  the file  we uploded  to our  ec2  in AWS that  will handle the  request to predict the wather.
+

@@ -1,8 +1,9 @@
+# File to explore how our .nc4  look like  and data they contain
 import xarray as xr
 import matplotlib.pyplot as plt
 
 # ---- Path to your .nc4 file ----
-FILE = "MERRA2_daily/MERRA2_400.statD_2d_slv_Nx.20250605.nc4"  # change to your filename
+FILE = "MERRA2_daily/MERRA2_400.statD_2d_slv_Nx.20191228.nc4"  
 
 # ---- Load the dataset ----
 ds = xr.open_dataset(FILE)
