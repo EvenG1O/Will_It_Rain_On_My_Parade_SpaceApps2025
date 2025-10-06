@@ -11,7 +11,7 @@ from pmdarima import auto_arima
 # PARAMETERS
 # ---------------------------
 folder_path = "MERRA2_daily"  # folder containing .nc4 files
-variable = "T2MMAX"
+variable = "T2MMEAN"
 lat, lon = -90.0, -178.75
 train_years = ["2020", "2021"]
 test_year = "2022"  # forward test
